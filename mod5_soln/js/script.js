@@ -229,6 +229,8 @@ function buildAndShowCategoriesHTML (categories) {
   $ajaxUtils.sendGetRequest(
     categoriesTitleHtml,
     function (categoriesTitleHtml) {
+      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+      console.log('sbm ', chosenCategoryShortName);
       // Retrieve single category snippet
       $ajaxUtils.sendGetRequest(
         categoryHtml,
