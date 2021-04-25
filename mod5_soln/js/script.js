@@ -91,11 +91,11 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-// $ajaxUtils.sendGetRequest(
-//   allCategoriesUrl,
-//   buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
-//   true); // Explicitly setting the flag to get JSON from server processed into an object literal
-// });
+$ajaxUtils.sendGetRequest(
+  allCategoriesUrl,
+  buildAndShowCategoriesHTML, // ***** <---- TODO: STEP 1: Substitute [...] ****** buildAndShowHomeHTML
+  true); // Explicitly setting the flag to get JSON from server processed into an object literal
+});
 // *** finish **
 
 
