@@ -85,11 +85,11 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
+    console.log('sbm ', responseText);
     document.querySelector("#main-content")
       .innerHTML = responseText;
   },
   false);
-  console.log('sbm ', responseText);
   // });
 
 $ajaxUtils.sendGetRequest(
