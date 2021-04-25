@@ -89,7 +89,8 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-// });
+  console.log('sbm ', responseText);
+  // });
 
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
@@ -124,31 +125,31 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       var homeHtmlToInsertIntoMainPage =
-        insertProperty(html,
+        insertProperty(homeHtml,
                        "randomCategoryShortName",
                        chosenCategoryShortName);
       console.log('sbm ', homeHtmlToInsertIntoMainPage);
 
-      html =
-      insertProperty(html,
-                     "short_name",
-                     short_name);
-                     menuItemsTitleHtml =
-                     insertProperty(menuItemsTitleHtml,
-                                    "special_instructions",
-                                    categoryMenuItems.category.special_instructions);
+      // html =
+      // insertProperty(html,
+      //                "short_name",
+      //                short_name);
+      //                menuItemsTitleHtml =
+      //                insertProperty(menuItemsTitleHtml,
+      //                               "special_instructions",
+      //                               categoryMenuItems.category.special_instructions);
                  
-                   var finalHtml = menuItemsTitleHtml;
-                   finalHtml += "<section class='row'>";
+      //              var finalHtml = menuItemsTitleHtml;
+      //              finalHtml += "<section class='row'>";
                  
-                   // Loop over menu items
-                   var menuItems = categoryMenuItems.menu_items;
-                   var catShortName = categoryMenuItems.category.short_name;
-                   for (var i = 0; i < menuItems.length; i++) {
-                     // Insert menu item values
-                     var html = menuItemHtml;
-                     html =
-                       insertProperty(html, "short_name", menuItems[i].short_name);
+      //              // Loop over menu items
+      //              var menuItems = categoryMenuItems.menu_items;
+      //              var catShortName = categoryMenuItems.category.short_name;
+      //              for (var i = 0; i < menuItems.length; i++) {
+      //                // Insert menu item values
+      //                var html = menuItemHtml;
+      //                html =
+      //                  insertProperty(html, "short_name", menuItems[i].short_name);
                  
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
