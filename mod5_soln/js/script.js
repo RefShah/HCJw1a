@@ -89,7 +89,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-});
+// });
 
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
