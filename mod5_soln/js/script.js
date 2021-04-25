@@ -13,7 +13,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtmlUrl = "snippets/home-snippet.html";
+var homeHtmlUrl = "../snippets/home-snippet.html";
 var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://davids-restaurant.herokuapp.com/categories.json";
@@ -123,10 +123,10 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      // var homeHtmlToInsertIntoMainPage =
-      //   insertProperty(html,
-      //                  "randomCategoryShortName",
-      //                  chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage =
+        insertProperty(html,
+                       "randomCategoryShortName",
+                       chosenCategoryShortName);
       console.log('sbm ', homeHtmlToInsertIntoMainPage);
 
       // html =
